@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Challenge - Jogo da Forca - Alura Challenges Oracle ONE - Danilo Sanchez
+    </title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">a</h1>
+    </header>
+    <section class="telaInicial">
+      <button class="btComecar">Começar a jogar</button>
+      <button class="btAdicionar">Adicionar nova palavra</button>
+    </section>
+    <section class="telaAdicionar oculto">
+      <div class="texto">
+        <input
+          id="palavraAdicionar"
+          placeholder="Digite uma palavra ou frase"
+          required
+        />
+        <p>Máx. de 8 letras</p>
+      </div>
+      <div class="botoes">
+        <button class="btSalvar">Salvar e começar</button>
+        <button class="btCancelar">Cancelar</button>
+      </div>
+    </section>
+    <section class="telaJogo oculto">
+      <div id="div-aparece-forca" class="canvas">
+        <canvas id="forca" height="860px" width="1200px"></canvas>
+        <div class="sublinhado"></div>
+      </div>
+      <div class="botoes">
+        <button class="btNovo">Novo jogo</button>
+        <button class="btDesistir">Desistir</button>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
